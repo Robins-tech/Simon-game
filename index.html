@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+  <h1 id="level-title">Press A Key to Start</h1>
+  <div class="container">
+
+    <div id="popup" class="popup">
+      <div class="popup-content">
+          <h2 class="popup-title">Welcome to Simon!</h2>
+          <p class="popup-paragraph"> How to Play Simon.</p>
+
+          <img src="./gif/gameplay.gif" class="gif-css"/>
+          <p></p>
+
+          <button id="close" class="popup-btn">Close</button>
+
+          <div class="instructions">
+            <p>Getting Started</p>
+            <ul class="lists">
+              <li>Press any key to begin the game.</li>
+            </ul>
+
+            <p>Gameplay</p>
+            <ul class="lists">
+              <li>Level 1: A single box will flash. Click on that box to advance to the next level.</li>
+              <li>Level 2 and beyond:</li>
+              <ul class="lists">
+                <li>A sequence of boxes will flash.</li>
+                <li>Carefully watch the sequence.</li>
+                <li>Click the boxes in the exact order they were shown.</li>
+                <li>With each correct level, a new box will be added to the sequence.</li>
+              </ul>
+            </ul>
+
+            <p>Game Over</p>
+            <ul class="lists">
+              <li>If you click the wrong box or miss a box, the game ends.</li>
+              <li>Press any key to start a new game.</li>
+            </ul>
+
+            <p>Tips</p>
+            <ul class="lists">
+              <li>Focus on the pattern and try to memorize the sequence.</li>
+              <li>The game gets progressively harder, so stay focused.</li>
+              <li>Enjoy the challenge and have fun!</li>
+            </ul>
+          </div>
+
+          <button id="close" class="popup-btn">Close</button>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <button id="green" class="btn green"><img src="./images/chess.png" class="chess" draggable="false"/></button>
+
+      <button id="red" class="btn red"><img src="./images/queen.png" class="chess" draggable="false"/></button>
+    </div>
+
+    <div class="row">
+
+      <button id="yellow" class="btn yellow"><img src="./images/pawn.png" class="chess" draggable="false"/></button>
+
+      <button id="blue" class="btn blue"><img src="./images/rook.png" class="chess" draggable="false"/></button>
+
+    </div>
+
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="game.js" charset="utf-8"></script>
+</body>
+
+</html>
